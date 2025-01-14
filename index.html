@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforme sua Vida com Orações Poderosas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 30px auto;
+            text-align: center;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .image-container {
+            margin: 20px auto;
+        }
+        .image-container img {
+            width: 100%;
+            max-width: 700px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            color: #fff;
+            background: #e74c3c;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 0 4px 8px rgba(231, 76, 60, 0.4);
+            animation: pulse 1.5s infinite;
+        }
+        .btn:hover {
+            background: #c0392b;
+        }
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+        .language-selector {
+            margin: 20px 0;
+        }
+        .language-selector select {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .price {
+            font-size: 20px;
+            color: #27ae60;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Idioma -->
+        <div class="language-selector">
+            <label for="language">(BR) Selecione seu idioma:</label>
+            <select id="language" onchange="changeLanguage(this.value)">
+                <option value="pt">Português</option>
+                <option value="en">English</option>
+                <option value="es">Español</option>
+            </select>
+        </div>
+
+        <!-- Título -->
+        <h1 id="title">Transforme sua Vida com Orações Poderosas</h1>
+
+        <!-- Promessa -->
+        <p id="description">
+            Descubra como superar os maiores desafios da vida com orações específicas e versículos bíblicos que fortalecem sua fé e trazem paz ao coração. Este eBook é o guia espiritual prático que você precisa!
+        </p>
+
+        <!-- Imagem -->
+        <div class="image-container">
+            <img src="https://i.postimg.cc/0NrjjMDM/0-3.png" alt="Jesus" />
+        </div>
+
+        <!-- Benefícios -->
+        <p id="benefits">
+            <strong>Com este eBook, você vai:</strong><br />
+            Fortalecer sua fé, se conectar com Deus e transformar suas preocupações em bênçãos com orações poderosas e práticas.
+        </p>
+
+        <!-- Preço -->
+        <p class="price" id="price">De R$59,90 por apenas R$19,90!</p>
+
+        <!-- Botão de Compra -->
+        <a href="#" class="btn" id="buy-button">Compre Agora</a>
+    </div>
+
+    <script>
+        function changeLanguage(language) {
+            const buyButton = document.getElementById("buy-button");
+            const price = document.getElementById("price");
+            const languageLabel = document.querySelector(".language-selector label");
+
+            if (language === "en") {
+                document.getElementById("title").innerText = "Transform Your Life with Powerful Prayers";
+                document.getElementById("description").innerText = "Discover how to overcome life's biggest challenges with specific prayers and Bible verses that strengthen your faith and bring peace to your heart. This eBook is the practical spiritual guide you need!";
+                document.getElementById("benefits").innerHTML = "<strong>With this eBook, you will:</strong><br />Strengthen your faith, connect with God, and transform your worries into blessings with powerful and practical prayers.";
+                price.innerText = "From $29.00 to just $9.00!";
+                buyButton.innerText = "Buy Now";
+                buyButton.href = "#_en";
+                languageLabel.innerText = "(EN) Select your language:";
+            } else if (language === "es") {
+                document.getElementById("title").innerText = "Transforma tu Vida con Oraciones Poderosas";
+                document.getElementById("description").innerText = "Descubre cómo superar los mayores desafíos de la vida con oraciones específicas y versículos bíblicos que fortalecen tu fe y traen paz a tu corazón. ¡Este eBook es la guía espiritual práctica que necesitas!";
+                document.getElementById("benefits").innerHTML = "<strong>Con este eBook, tú podrás:</strong><br />Fortalecer tu fe, conectarte con Dios y transformar tus preocupaciones en bendiciones con oraciones poderosas y prácticas.";
+                price.innerText = "De $29.00 a solo $9.00!";
+                buyButton.innerText = "Compra Ahora";
+                buyButton.href = "#_esp";
+                languageLabel.innerText = "(ES) Selecciona tu idioma:";
+            } else {
+                document.getElementById("title").innerText = "Transforme sua Vida com Orações Poderosas";
+                document.getElementById("description").innerText = "Descubra como superar os maiores desafios da vida com orações específicas e versículos bíblicos que fortalecem sua fé e trazem paz ao coração. Este eBook é o guia espiritual prático que você precisa!";
+                document.getElementById("benefits").innerHTML = "<strong>Com este eBook, você vai:</strong><br />Fortalecer sua fé, se conectar com Deus e transformar suas preocupações em bênçãos com orações poderosas e práticas.";
+                price.innerText = "De R$59,90 por apenas R$19,90!";
+                buyButton.innerText = "Compre Agora";
+                buyButton.href = "#_pt";
+                languageLabel.innerText = "(BR) Selecione seu idioma:";
+            }
+        }
+    </script>
+</body>
+</html>
