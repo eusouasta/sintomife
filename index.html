@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transforme sua Vida com Orações Poderosas</title>
+    <title>Transforma tu Vida con Oraciones Poderosas</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -80,20 +80,20 @@
     <div class="container">
         <!-- Idioma -->
         <div class="language-selector">
-            <label for="language">(BR) Selecione seu idioma:</label>
+            <label for="language">(ES) Selecciona tu idioma:</label>
             <select id="language" onchange="changeLanguage(this.value)">
+                <option value="es">Español</option>
                 <option value="pt">Português</option>
                 <option value="en">English</option>
-                <option value="es">Español</option>
             </select>
         </div>
 
         <!-- Título -->
-        <h1 id="title">Transforme sua Vida com Orações Poderosas</h1>
+        <h1 id="title">Transforma tu Vida con Oraciones Poderosas</h1>
 
         <!-- Promessa -->
         <p id="description">
-            Descubra como superar os maiores desafios da vida com orações específicas e versículos bíblicos que fortalecem sua fé e trazem paz ao coração. Este eBook é o guia espiritual prático que você precisa!
+            Descubre cómo superar los mayores desafíos de la vida con oraciones específicas y versículos bíblicos que fortalecen tu fe y traen paz a tu corazón. ¡Este eBook es la guía espiritual práctica que necesitas!
         </p>
 
         <!-- Imagem -->
@@ -103,15 +103,15 @@
 
         <!-- Benefícios -->
         <p id="benefits">
-            <strong>Com este eBook, você vai:</strong><br />
-            Fortalecer sua fé, se conectar com Deus e transformar suas preocupações em bênçãos com orações poderosas e práticas.
+            <strong>Con este eBook, tú podrás:</strong><br />
+            Fortalecer tu fe, conectarte con Dios y transformar tus preocupaciones en bendiciones con oraciones poderosas y prácticas.
         </p>
 
         <!-- Preço -->
-        <p class="price" id="price">De R$59,90 por apenas R$19,90!</p>
+        <p class="price" id="price">De $29,00 a solo $5,00!</p>
 
         <!-- Botão de Compra -->
-        <a href="https://pay.hotmart.com/A97517972X" class="btn" id="buy-button">Compre Agora</a>
+        <a href="https://pay.hotmart.com/A97517972X" class="btn" id="buy-button">Compra Ahora</a>
     </div>
 
     <script>
@@ -124,26 +124,26 @@
                 document.getElementById("title").innerText = "Transform Your Life with Powerful Prayers";
                 document.getElementById("description").innerText = "Discover how to overcome life's biggest challenges with specific prayers and Bible verses that strengthen your faith and bring peace to your heart. This eBook is the practical spiritual guide you need!";
                 document.getElementById("benefits").innerHTML = "<strong>With this eBook, you will:</strong><br />Strengthen your faith, connect with God, and transform your worries into blessings with powerful and practical prayers.";
-                price.innerText = "From $29.00 to just $9.00!";
+                price.innerText = "From $29.00 to just $5.00!";
                 buyButton.innerText = "Buy Now";
                 buyButton.href = "https://pay.hotmart.com/A97517972X";
                 languageLabel.innerText = "(EN) Select your language:";
-            } else if (language === "es") {
-                document.getElementById("title").innerText = "Transforma tu Vida con Oraciones Poderosas";
-                document.getElementById("description").innerText = "Descubre cómo superar los mayores desafíos de la vida con oraciones específicas y versículos bíblicos que fortalecen tu fe y traen paz a tu corazón. ¡Este eBook es la guía espiritual práctica que necesitas!";
-                document.getElementById("benefits").innerHTML = "<strong>Con este eBook, tú podrás:</strong><br />Fortalecer tu fe, conectarte con Dios y transformar tus preocupaciones en bendiciones con oraciones poderosas y prácticas.";
-                price.innerText = "De $29.00 a solo $9.00!";
-                buyButton.innerText = "Compra Ahora";
-                buyButton.href = "https://pay.hotmart.com/A97517972X";
-                languageLabel.innerText = "(ES) Selecciona tu idioma:";
-            } else {
+            } else if (language === "pt") {
                 document.getElementById("title").innerText = "Transforme sua Vida com Orações Poderosas";
                 document.getElementById("description").innerText = "Descubra como superar os maiores desafios da vida com orações específicas e versículos bíblicos que fortalecem sua fé e trazem paz ao coração. Este eBook é o guia espiritual prático que você precisa!";
                 document.getElementById("benefits").innerHTML = "<strong>Com este eBook, você vai:</strong><br />Fortalecer sua fé, se conectar com Deus e transformar suas preocupações em bênçãos com orações poderosas e práticas.";
-                price.innerText = "De R$59,90 por apenas R$19,90!";
+                price.innerText = "De $29,00 por apenas $5,00!";
                 buyButton.innerText = "Compre Agora";
                 buyButton.href = "https://pay.hotmart.com/A97517972X";
                 languageLabel.innerText = "(BR) Selecione seu idioma:";
+            } else {
+                document.getElementById("title").innerText = "Transforma tu Vida con Oraciones Poderosas";
+                document.getElementById("description").innerText = "Descubre cómo superar los mayores desafíos de la vida con oraciones específicas y versículos bíblicos que fortalecen tu fe y traen paz a tu corazón. ¡Este eBook es la guía espiritual práctica que necesitas!";
+                document.getElementById("benefits").innerHTML = "<strong>Con este eBook, tú podrás:</strong><br />Fortalecer tu fe, conectarte con Dios y transformar tus preocupaciones en bendiciones con oraciones poderosas y prácticas.";
+                price.innerText = "De $29,00 a solo $5,00!";
+                buyButton.innerText = "Compra Ahora";
+                buyButton.href = "https://pay.hotmart.com/A97517972X";
+                languageLabel.innerText = "(ES) Selecciona tu idioma:";
             }
         }
     </script>
